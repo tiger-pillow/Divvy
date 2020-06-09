@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Airport from './Airport';
+import Top from './Top';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  	<Top/> 
+  	<Airport/> 
   </React.StrictMode>,
   document.getElementById('root')
 );
