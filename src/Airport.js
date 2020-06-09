@@ -4,20 +4,19 @@ import "react-datepicker/dist/react-datepicker.css";
 import './Airport.css';
 import Basket from  './Basket.js';
 import './Basket.css';
-import {user, airports} from './fakedata.js';
+import {users, airports} from './fakedata.js';
 
 function Airport () {
 	const [startDate, setStartDate] = useState(new Date());
 	
 	const airportlist = airports.map((name, i)=> {
-		return <Block name = {airports[i].name} />
+		return <Block name = {airports[i].name} date = {startDate}/>
 	})
 
 	return (
 		<div className = "f3 tc">
 			<header>
-			<DatePicker selected = {startDate} onChange= {date => setStartDate(date)}/>
-			<p> {startDate.toString()} </p>
+				<DatePicker selected = {startDate} onChange= {date => setStartDate(date)}/>
 			</header>
 			{airportlist}
 		</div> 
@@ -26,8 +25,10 @@ function Airport () {
 export default Airport;
 
 function Block (props) {
-	const blocklist = user.filter(individual => {
-		return individual.airport.toLowerCase() === props.name.toLowerCase()})
+	const blocklist = users.filter(user => {
+		{console.log(user.month, props.date.getMonth())}
+		return (Number(user.month) === (props.date.getMonth()+1) && user.airport.toLowerCase() === props.name.toLowerCase())
+		})
 
 	const blockmap = blocklist.map((name, i) => {
 		return <Basket id = {blocklist[i].id} name={blocklist[i].name} time = {blocklist[i].time} airport = {blocklist[i].airport}/>
@@ -35,7 +36,7 @@ function Block (props) {
 	
 	return ( 
 		<div className = "bg-light-yellow dib br4 pa1 ma3 grow">
-			<header> {props.name} </header>
+			<header> {props.name} {props.date.getMonth()+1} </header>
 			{blockmap}
 		</div>  
 		)
