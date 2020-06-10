@@ -59,6 +59,7 @@ function Timeblock ({time, date, airport, users}){
 
 	const Userlist = users.filter(user => {
 		return (Number(user.month) === (date.getMonth()+1) 
+			&& Number(user.date) === date.getDate()
 			&& user.airport.toLowerCase() === airport.name.toLowerCase()
 			&& user.time === time)
 	});
@@ -68,8 +69,8 @@ function Timeblock ({time, date, airport, users}){
 	})
 
 	return (
-		<div className = "bg-light-red dib br2 pa1 ma3 grow " >
-		<h4>{time}</h4>
+		<div className = "bg-light-red dib br2 pa1 ma1 grow " >
+		<h5>{time}</h5>
 		{Basketmap}
 		</div> )
 

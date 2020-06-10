@@ -2,6 +2,7 @@ export const users = [
 {
 	id: 'ewr060110',
 	month: "6",
+	date:"10",
 	time: "13:00",
 	name: 'Kevin',
 	airport: 'EWR'
@@ -9,6 +10,7 @@ export const users = [
 {
 	id: 'ewr060110',
 	month: "6",
+	date:"10",
 	time: "15:00",
 	name: 'Arthur',
 	airport: 'EWR'
@@ -16,6 +18,7 @@ export const users = [
 {
 	id: 'ewr060110',
 	month: "6",
+	date:"10",
 	time: "11:00",
 	name: 'Gladys',
 	airport: 'JFK'
@@ -23,6 +26,7 @@ export const users = [
 {
 	id: 'ewr060110',
 	month: "6",
+	date:"10",
 	time: "15:00",
 	name: 'Michael',
 	airport: 'EWR'
@@ -30,6 +34,7 @@ export const users = [
 {
 	id: 'bdl060110',
 	month: "6",
+	date:"11",
 	time: "11:00",
 	name: 'Bohan',
 	airport: 'BDL'
@@ -37,6 +42,7 @@ export const users = [
 {
 	id: 'lga060110',
 	month:"6",
+	date:"10",
 	time: "10:00",
 	name: 'Archie',
 	airport: 'LGA'
@@ -44,6 +50,7 @@ export const users = [
 {
 	id: 'lga060110',
 	month:"6",
+	date:"10",
 	time: "10:00",
 	name: 'Arash',
 	airport: 'LGA'
@@ -51,6 +58,7 @@ export const users = [
 {
 	id: 'lga060110',
 	month:"6",
+	date:"10",
 	time: "10:00",
 	name: 'Jesus',
 	airport: 'LGA'
