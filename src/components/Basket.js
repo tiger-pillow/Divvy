@@ -3,7 +3,7 @@ import './Basket.css'
 
 function Basket (props) {
 	return (
-		<div className = 'bg-light-blue dib br3 pa3 ma2 grow'>
+		<div className = 'tc bg-light-blue fl w-20 br3 pa3 ma2 grow'>
 			<img alt = '' src = '' />
 			<div>
 				<h3> {props.airport} <br></br> {props.time} </h3>
@@ -14,5 +14,4 @@ function Basket (props) {
 
 		)
 }
-
 export default Basket;

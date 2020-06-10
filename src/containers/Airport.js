@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './Airport.css';
-import Basket from  './Basket.js';
-import './Basket.css';
-import {users, airports} from './fakedata.js';
-import Scroll from './Scroll';
+import Basket from  '../components/Basket.js';
+import '../components/Basket.css';
+import {users, airports} from '../components/fakedata.js';
+import Scroll from '../components/Scroll';
 
 function Airport () {
 	const [startDate, setStartDate] = useState(new Date());

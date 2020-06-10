@@ -26,6 +26,20 @@ export const users = [
 	time: "10 AM",
 	name: 'Archie',
 	airport: 'LGA'
+},
+{
+	id: 'lga060110',
+	month:"5",
+	time: "10 AM",
+	name: 'Arash',
+	airport: 'LGA'
+},
+{
+	id: 'lga060110',
+	month:"5",
+	time: "10 AM",
+	name: 'Jesus',
+	airport: 'LGA'
 }
 
 ]
