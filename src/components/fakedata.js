@@ -1,16 +1,30 @@
 export const users = [
 {
-	id: 'jfk060110',
+	id: 'ewr060110',
 	month: "6",
-	time: "10:00",
+	time: "13:00",
+	name: 'Kevin',
+	airport: 'EWR'
+},
+{
+	id: 'ewr060110',
+	month: "6",
+	time: "15:00",
+	name: 'Arthur',
+	airport: 'EWR'
+},
+{
+	id: 'ewr060110',
+	month: "6",
+	time: "11:00",
 	name: 'Gladys',
 	airport: 'JFK'
 },
 {
 	id: 'ewr060110',
 	month: "6",
-	time: "13:00",
-	name: 'Kevin',
+	time: "15:00",
+	name: 'Michael',
 	airport: 'EWR'
 },
 {
@@ -46,15 +60,19 @@ export const users = [
 
 export const airports = [
 {
-	name: 'JFK'
+	name: 'JFK',
+	times: [ "10:00", "11:00", "13:00"]
 },
 {
-	name: 'EWR'
+	name: 'EWR',
+	times: [ "10:00", "15:00", "17:00"]
 },
 {
-	name: 'BDL'
+	name: 'BDL',
+	times: [ "1:00", "11:00", "13:00"]
 },
 {
-	name: 'LGA'
+	name: 'LGA',
+	times: [ "10:00"]
 }
 ]
