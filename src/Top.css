@@ -1,0 +1,12 @@
+@font-face {
+font-family: 'Kotori Rose Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Kotori Rose Bold'), url('KotoriRose-Bold.woff') format('woff');
+}
+
+h1{
+	font-family: 'Kotori Rose Bold';
+	font-weight: 400;
+
+}

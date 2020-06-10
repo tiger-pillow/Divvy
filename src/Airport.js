@@ -5,6 +5,7 @@ import './Airport.css';
 import Basket from  './Basket.js';
 import './Basket.css';
 import {users, airports} from './fakedata.js';
+import Scroll from './Scroll';
 
 function Airport () {
 	const [startDate, setStartDate] = useState(new Date());
@@ -18,7 +19,7 @@ function Airport () {
 			<header>
 				<DatePicker selected = {startDate} onChange= {date => setStartDate(date)}/>
 			</header>
-			{airportlist}
+			<Scroll>{airportlist}</Scroll>
 		</div> 
 		)
 }
