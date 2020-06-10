@@ -6,6 +6,7 @@ import Basket from  '../components/Basket.js';
 import '../components/Basket.css';
 import {users, airports} from '../components/fakedata.js';
 import Scroll from '../components/Scroll';
+import './Airport2.css'
 
 class Airport2 extends Component {
 	constructor (props){
@@ -41,8 +42,7 @@ function Blocks({date, airports, users}){
 	})
 
 	return (
-		<div className = "bg-light-yellow fl w-100 br4 pa1 ma3 grow">
-		{console.log("up airport", airports)}
+		<div >
 		{Airmaps}
 		</div>
 		);
@@ -56,9 +56,9 @@ function Block ({date, airport, users}){
 	const Basketmap = Userlist.map((name, i) => {
 		return <Basket id = {Userlist[i].id} name = {Userlist[i].name} time = {Userlist[i].time} airport = {Userlist[i].airport} />
 	})
-
 	return (
-		<div className = "">
+		<div className = "airportblock grow" >
+		<h4>{airport}</h4>
 		{Basketmap}
 		</div> );
 	

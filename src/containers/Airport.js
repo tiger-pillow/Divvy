@@ -27,7 +27,6 @@ export default Airport;
 
 function Block (props) {
 	const blocklist = users.filter(user => {
-		{console.log(user.month, props.date.getMonth())}
 		return (Number(user.month) === (props.date.getMonth()+1) && user.airport.toLowerCase() === props.name.toLowerCase())
 		})
 

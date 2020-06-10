@@ -3,11 +3,12 @@ import './Basket.css'
 
 function Basket (props) {
 	return (
-		<div className = 'tc bg-light-blue fl w-20 br3 pa3 ma2 grow'>
+		<div className = 'basket grow fl w-20'>
 			<img alt = '' src = '' />
 			<div>
-				<h3> {props.airport} <br></br> {props.time} </h3>
-				<p> {props.name }</p>
+				{props.time}
+				<br></br>
+				{props.name} 
 			</div>
 
 		</div>

@@ -1,0 +1,14 @@
+.airportblock {
+	display : inline-block;
+	min-height: 100%;
+	min-width: 20%;
+	justify-content: center;
+	background-color: #FCF3CF; 
+	padding: 1px;
+	margin: 5px;
+	border-radius: 10px
+
+}
+
+
+/*bg-light-yellow dib br4 pa1 ma3 grow */
