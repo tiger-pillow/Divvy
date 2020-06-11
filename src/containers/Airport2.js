@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import './Airport.css';
+import './Airport2.css';
 import Basket from  '../components/Basket.js';
 import '../components/Basket.css';
 import {users, airports} from '../components/fakedata.js';
 import Scroll from '../components/Scroll';
 import './Airport2.css'
-import Signin from '../components/Signin'
 
 class Airport2 extends Component {
 
@@ -16,21 +15,19 @@ class Airport2 extends Component {
 		this.state = {
 			startDate: new Date(),
 			airports: airports,
-			users: users
+			users: users,
 	};}
 	
 	onChange = date => {this.setState({startDate: date});};
-
+	
 
 	render () {
 		const Airmaps = this.state.airports.map((name, i) => {
 		return <Block date = {this.state.startDate} airport = {this.state.airports[i]} users = {this.state.users} />
 	});
 
-
 		return (
 			<div className = "f3 tc">
-			<Signin/>
 			<header> 
 				<DatePicker selected = {this.state.startDate} onChange = {this.onChange} />
 			</header>

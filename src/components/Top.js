@@ -4,7 +4,7 @@ import './Top.css';
 function Top () {
 	return (
 		<div className = "tc f3">
-			<h1> Welcome to Divvy </h1>
+			<h1 > Welcome to Divvy </h1>
 		</div>)
 }
 
