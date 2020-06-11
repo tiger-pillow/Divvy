@@ -7,6 +7,7 @@ import '../components/Basket.css';
 import {users, airports} from '../components/fakedata.js';
 import Scroll from '../components/Scroll';
 import './Airport2.css'
+import Signin from '../components/Signin'
 
 class Airport2 extends Component {
 
@@ -29,9 +30,11 @@ class Airport2 extends Component {
 
 		return (
 			<div className = "f3 tc">
+			<Signin/>
 			<header> 
 				<DatePicker selected = {this.state.startDate} onChange = {this.onChange} />
 			</header>
+			<br></br>
 			<Scroll> 
 				{Airmaps}
 			</Scroll>

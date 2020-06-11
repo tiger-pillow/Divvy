@@ -9,7 +9,6 @@ function Basket (props) {
 			</div>
 
 		</div>
-
 		)
 }
 export default Basket;
