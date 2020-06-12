@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Airport2 from './Airport2';
 import Top from '../components/Top';
-import Signin from '../components/Signin';
+import InitialForm from '../components/InitialForm';
 import './Airport2.css';
 import Help from '../components/Help'
 import Thank from '../components/Thank'
@@ -27,7 +27,7 @@ class App extends Component{
 		<h5 className = 'tr link dim black underline pa3 pointer'> <Help/> </h5>
 		<h5 className = 'tr link dim black underline pa3 pointer'> Login </h5>
         <Airport2 />
-        <Signin onRouteChange = {this.onRouteChange} /> 
+        <InitialForm onRouteChange = {this.onRouteChange} /> 
         </div>
       :(this.state.route === 'Thank'
       	? <div>

@@ -8,7 +8,7 @@ function Thank ({onRouteChange}) {
 				<input 
 				className = 'b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib'
 				value = 'click to modify'
-				onClick = {onRouteChange} />
+				onClick = {() => {onRouteChange('modify')}} />
 			</div> <br></br> 
 			<div>
 				<input 
